@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Interview</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -20,7 +27,10 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="nav text-3">
-              <a href="#"><span class="globe-icon icon-text-gap icon-black">🌐</span>United States</a>
+              <a href="#"
+                ><span class="globe-icon icon-text-gap icon-black">🌐</span
+                >United States</a
+              >
               <a href="#">Trip Boards</a>
               <a href="#">List your property</a>
               <a href="#">Help</a>
@@ -45,29 +55,49 @@
               <button class="share-btn pill-btn">
                 <span class="icon margin-right">↗</span> Share
               </button>
-              <button class="save-btn pill-btn"><span class="icon margin-right">❤</span> Save</button>
+              <button class="save-btn pill-btn">
+                <span class="icon margin-right">❤</span> Save
+              </button>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xl-6 col-md-12">
-            <img class="image-fluid" src="images/gallery-image1.jpg" alt="placeholder" />
+            <img
+              class="image-fluid"
+              src="images/gallery-image1.jpg"
+              alt="placeholder"
+            />
           </div>
           <div class="col-xl-6 col-md-12">
             <div class="row">
               <div class="col-xl-6">
-                <img class="image-fluid" src="images/gallery-image2.jpg" alt="placeholder" />
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image2.jpg"
+                  alt="placeholder"
+                />
               </div>
               <div class="col-xl-6">
-                <img class="image-fluid" src="images/gallery-image3.jpg" alt="placeholder" />
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image3.jpg"
+                  alt="placeholder"
+                />
               </div>
-            </div>
-            <div class="row">
               <div class="col-xl-6">
-                <img class="image-fluid" src="images/gallery-image4.jpg" alt="placeholder" />
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image4.jpg"
+                  alt="placeholder"
+                />
               </div>
               <div class="col-xl-6">
-                <img class="image-fluid" src="images/gallery-image5.jpg" alt="placeholder" />
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image5.jpg"
+                  alt="placeholder"
+                />
               </div>
             </div>
           </div>
@@ -90,11 +120,13 @@
         <div class="row">
           <div class="col-xl-8">
             <p class="text-3">Entire home</p>
-            <h1 class="bold">Juneau Vacation Home: Stunning View + Beach Access</h1>
-            <div class="row">
-              <div class="col-xl-3">
-                <p class="rating text-3"><span>9.8 </span> Exceptional</p>
-                <a href="#">See all 24 reviews</a>
+            <h1 class="bold">
+              Juneau Vacation Home: Stunning View + Beach Access
+            </h1>
+            <div class="row rating">
+              <div class="col-xl-4">
+                <p class="text-2 bold"><span>9.8 </span> Exceptional</p>
+                <a class="text-3 bold" href="#">See all 24 reviews <i class="fa-solid fa-chevron-right"></i></a>
               </div>
             </div>
             <div class="row">
@@ -218,40 +250,37 @@
             </div>
           </div>
           <div class="col-xl-4">
-            <div class="row">
-              <div class="col-xl-4">
-                <div class="membership-content">
-                  <div class="membership-icon">
-                    <!-- Placeholder for the icon, replace with SVG or image -->
-                    &#x2740;
-                    <!-- Unicode symbol for placeholder, replace as needed -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-8">
-                <div class="membership-content">
-                  <div class="membership-text">
-                    <p>Members get our best prices when signed in!</p>
-                    <button class="sign-in-btn">Sign in</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12">
+            <div class="row right-sidebar">
+              <div class="col-xl-12 membership-info">
                 <div class="row">
-                  <div class="col-xl-12">
-                    <h2 class="text-2">$134 <span>per night</span></h2>
-                    <p class="cancellation-info">
-                      <span>Free cancellation 🛈</span> <br />(Before Mon, Nov 4)
-                    </p>
-                    <p class="availability">✅ Your dates are available</p>
+                  <div class="col-xl-4">
+                    <div class="membership-icon">
+                      <i class="fa-solid fa-fan"></i>
+                    </div>
+                  </div>
+                  <div class="col-xl-8">
+                    <div class="membership-content">
+                      <p>Members get our best prices when signed in!</p>
+                      <button class="sign-in-btn pill-btn">Sign in</button>
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-xl-12 card">
+                <div class="price">
+                  <h2 class="text-2">$134 <span>per night</span></h2>
+                </div>
+                <div class="cancellation">
+                  <p class="cancellation-info">
+                    <span>Free cancellation 🛈</span> <br />(Before Mon, Nov 4)
+                  </p>
+                  <p class="availability">✅ Your dates are available</p>
+                </div>
+
                 <div class="row">
                   <div class="col-xl-6">
-                    <div class="date-input">
-                      <div class="calender-icon">📆</div>
+                    <div class="date-input card">
+                      <i class="fa-solid fa-calendar-days"></i>
                       <div>
                         <label>Start date</label>
                         <div class="date-box">Nov 18</div>
@@ -259,8 +288,8 @@
                     </div>
                   </div>
                   <div class="col-xl-6">
-                    <div class="date-input">
-                      <div class="calender-icon">📆</div>
+                    <div class="date-input card">
+                      <i class="fa-solid fa-calendar-days"></i>
                       <div>
                         <label>End date</label>
                         <div class="date-box">Nov 20</div>
@@ -268,103 +297,91 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="travelers">
-                      <label>Travelers</label>
-                      <div class="travelers-box">2 travelers</div>
-                    </div>
-                  </div>
+                <div class="col-xl-12 card travelers">
+                  <label>Travelers</label>
+                  <div class="date-box">2 travelers</div>
                 </div>
-                <div class="row">
+                <div class="flex">
                   <div class="col-xl-8">
                     <p class="total-price">
                       <strong>Total: </strong>
                     </p>
                   </div>
-                  <div class="col-xl-4">
+                  <div class="col-xl-4 flex justify-content-end">
                     <p class="total-price">
                       <strong>$500</strong>
                     </p>
                   </div>
                 </div>
-                <div class="row">
+                <div class="flex">
                   <div class="col-xl-8">
                     <p class="total-price">Total includes fees, not tax</p>
                   </div>
-                  <div class="col-xl-4">
+                  <div class="col-xl-4 flex justify-content-end">
                     <p class="total-price">
                       <a href="#">Price details</a>
                     </p>
                   </div>
                 </div>
-                <button class="book-now-btn">Book now</button>
-                <p class="disclaimer">You will not be charged yet</p>
+                <button class="book-now-btn pill-btn">Book now</button>
+                <p class="disclaimer text-3">You will not be charged yet</p>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12">
+              <div class="col-xl-12 text-3 contact-host">
                 <p>Contact host</p>
               </div>
+              <div class="col-xl-12 text-4 property-number">
+                <p><span class="bold">Property # </span>123456789</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8">
+            <div class="row">
+              <div class="col-xl-12">
+                <p class="text-1">Rooms & Beds</p>
+                <p class="text-2 bold">
+                  2 Bedrooms <span class="text-3">(sleeps 4)</span>
+                </p>
+              </div>
+            </div>
+            <div class="row text-3">
+              <div class="col-xl-6">
+                <p class="bold">Bedroom 1</p>
+                <p>1 queen bed</p>
+              </div>
+              <div class="col-xl-6">
+                <p class="bold">Bedroom 2</p>
+                <p>1 twin bed</p>
+              </div>
             </div>
             <div class="row">
               <div class="col-xl-12">
-                <p>Property</p>
+                <p class="text-2 bold">1 Bathroom</p>
+                <p class="text-3 bold">Full Bathroom</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <p class="text-1">Spaces</p>
+                <div class="amenities text-3">
+                  <div class="space-item">
+                    <span class="space-icon">🔥</span>
+                    <span>Deck or patio</span>
+                  </div>
+                  <div class="space-item">
+                    <span class="space-icon">🏡</span>
+                    <span>Outdoor Space</span>
+                  </div>
+                  <div class="space-item">
+                    <span class="space-icon">🍴</span>
+                    <span>Kitchen</span>
+                  </div>
+                </div>
+                <a href="#">See all rooms and beds details</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-8">
-              <div class="row">
-                <div class="col-xl-12">
-                  <p class="text-1">Rooms & Beds</p>
-                  <p class="text-2 bold">2 Bedrooms <span class="text-3">(sleeps 4)</span></p>
-                </div>
-              </div>
-              <div class="row text-3">
-                <div class="col-xl-6">
-                  <p class="bold">Bedroom 1</p>
-                  <p>1 queen bed</p>
-                </div>
-                <div class="col-xl-6">
-                  <p class="bold">Bedroom 2</p>
-                  <p>1 twin bed</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xl-12">
-                  <p class="text-2 bold">1 Bathroom</p>
-                  <p class="text-3 bold">Full Bathroom</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xl-12">
-                  <p class="text-1">Spaces</p>
-                  <div class="amenities text-3">
-                    <div class="space-item">
-                      <span class="space-icon">🔥</span>
-                      <span>Deck or patio</span>
-                    </div>
-                    <div class="space-item">
-                      <span class="space-icon">🏡</span>
-                      <span>Outdoor Space</span>
-                    </div>
-                    <div class="space-item">
-                      <span class="space-icon">🍴</span>
-                      <span>Kitchen</span>
-                    </div>
-                  </div>
-                  <a href="#">See all rooms and beds details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section>
         <div class="container">
@@ -437,13 +454,22 @@
 
               <p class="text-3">--POLICIES--</p>
               <p class="normal-text">-No pets allowed</p>
-              <p class="normal-text">-No events, parties, or large gatherings</p>
+              <p class="normal-text">
+                -No events, parties, or large gatherings
+              </p>
               <p class="normal-text">-Must be at least 25 years old to book</p>
               <p class="normal-text">-Additional fees and taxes may apply</p>
               <p class="normal-text">-Photo ID may be required upon check-in</p>
-              <p class="normal-text">-NOTE: The property requires stairs to access</p>
-              <p class="normal-text">-NOTE: The property does not have air conditioning</p>
-              <p class="normal-text">-NOTE: The property sleeps 3 guests in 2 beds, with room for 4 total by using the full floor mattress</p>
+              <p class="normal-text">
+                -NOTE: The property requires stairs to access
+              </p>
+              <p class="normal-text">
+                -NOTE: The property does not have air conditioning
+              </p>
+              <p class="normal-text">
+                -NOTE: The property sleeps 3 guests in 2 beds, with room for 4
+                total by using the full floor mattress
+              </p>
               <p class="normal-text">-No smoking</p>
             </div>
           </div>

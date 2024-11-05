@@ -72,11 +72,11 @@ h6 {
 // <weight>: Use a value from 100 to 900 */
 
 :root {
-    --gutter: 8px; /* Define the gutter size */
-  }
+  --gutter: 8px; /* Define the gutter size */
+}
 
 body {
-overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .inter-font {
@@ -100,15 +100,13 @@ overflow-x: hidden; /* Prevent horizontal scrollbar */
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--gutter));
-  margin-right: calc(-1 * var(--gutter));
+  margin: calc(-1 * var(--gutter));
 }
 
 [class*="col-"] {
   flex: 0 0 100%;
   max-width: 100%;
-  padding-left: calc(var(--gutter) / 2);
-  padding-right: calc(var(--gutter) / 2);
+  padding: calc(var(--gutter));
 }
 
 .col-xl-1 {
@@ -171,98 +169,101 @@ overflow-x: hidden; /* Prevent horizontal scrollbar */
   max-width: 100%;
 }
 
-h1{
+h1 {
   font-size: 40px;
 }
-.text-1{
+.text-1 {
   font-size: 32px;
   font-weight: 600;
 }
-.text-2{
+.text-2 {
   font-size: 24px;
   font-weight: 500;
 }
-.text-3{
+.text-3 {
   font-size: 16px;
   font-weight: 400;
 }
-.text-4{
+.text-4 {
   font-size: 16px;
   font-weight: 300;
 }
-.normal-text{
+.normal-text {
   font-size: 16;
   font-weight: 200;
 }
-.bold{
+.bold {
   font-weight: 600;
 }
 
-.margin-top{
+.margin-top {
   margin-top: 8px;
 }
-.margin-bottom{
+.margin-bottom {
   margin-bottom: 8px;
 }
-.margin-right{
+.margin-right {
   margin-right: 8px;
 }
-.margin-left{
+.margin-left {
   margin-left: 8px;
 }
 
-.padding{
+.padding {
   padding: 8px;
 }
-.padding-top{
+.padding-top {
   padding-top: 8px;
 }
-.padding-bottom{
+.padding-bottom {
   padding-bottom: 8px;
 }
-.padding-right{
+.padding-right {
   padding-right: 8px;
 }
-.padding-left{
+.padding-left {
   padding-left: 8px;
 }
 
-.gap-1{
+.gap-1 {
   gap: 8px;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
+.justify-content-end{
+    justify-content: flex-end;
+}
 
-.pill-btn{
+.pill-btn {
   border: 2px solid gray;
   border-radius: 20px;
   padding: 8px 16px;
 }
 
-.icon-text-gap{
+.icon-text-gap {
   margin-right: 16px;
 }
 
-.no-link{
+.no-link {
   text-decoration: none;
   color: black;
 }
 
-.image-fluid{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.image-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.card{
-  border: 1px solid gray;
+.card {
+  border: 1px solid #E0E1ED;
   border-radius: 8px;
   padding: 16px;
 }
@@ -275,18 +276,18 @@ h1{
   border-bottom: 1px solid rgb(181, 181, 181);
 }
 
-.nav a{
+.nav a {
   color: black;
   text-decoration: none;
   font-weight: 600;
 }
 
-.back-link a{
+.back-link a {
   text-decoration: none;
-  color: rgb(54, 54, 234)
+  color: rgb(54, 54, 234);
 }
 
-.action-buttons{
+.action-buttons {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -295,20 +296,154 @@ h1{
   gap: 5px;
 }
 
-.tab{
+.tab {
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
   max-width: 1200px;
 }
 
-.active-tab{
+.active-tab {
   color: blue;
   border-bottom: 2px solid blue;
 }
 
-.query{
+.query {
   background-color: rgb(190, 233, 233);
 }
+
+.rating{
+    margin: 8px 0;
+}
+.rating a{
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 8px;
+}
+.rating span{
+    background: darkgreen;
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.right-sidebar{
+    gap: 16px;
+}
+
+.membership-info {
+  background: navy;
+  border-radius: 16px;
+}
+
+.membership-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.membership-icon i {
+  font-size: 80px;
+  color: white;
+}
+
+.membership-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.membership-content p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.sign-in-btn {
+  background: blue;
+  color: white;
+  border: none;
+  width: fit-content;
+}
+
+.price{
+    border-bottom: 1px solid #E0E1ED;
+    padding-bottom: 16px;
+}
+.price h2{
+    font-weight: 700;
+}
+.price span{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cancellation{
+    padding: 16px 0;
+    font-size: 20px;
+}
+.cancellation .availability{
+    padding: 8px 0;
+}
+
+.date-input{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.date-input i{
+    font-size: 28px;
+}
+.date-input label{
+    font-size: 20px;
+}
+.date-input .date-box{
+    font-size: 24px;
+    font-weight: 500;
+}
+.travelers{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px
+}
+.travelers label{
+    font-size: 20px;
+}
+.travelers .date-box{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.book-now-btn{
+    border: none;
+    background: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    margin: 8px 0
+}
+
+.disclaimer{
+    text-align: center;
+    margin: 8px 0;
+}
+
+.contact-host{
+    text-align: center;
+    border-bottom: 1px solid #E0E1ED;
+    padding-bottom: 16px;
+    font-weight: 600;
+    color: blue;
+}
+
+.property-number {
+    text-align: center;
+}
+
 
 @media (max-width: 768px) {
   .nav {
