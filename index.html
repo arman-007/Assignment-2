@@ -27,7 +27,7 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="nav text-3">
-              <a href="#"><i class="fa-solid fa-globe"></i>United States</a>
+              <a href="#" id="regionLink"><i class="fa-solid fa-globe"></i> United States</a>
               <a href="#">Trip Boards</a>
               <a href="#">List your property</a>
               <a href="#">Help</a>
@@ -55,7 +55,7 @@
                 ></span>
                 Share
               </button>
-              <button class="save-btn pill-btn">
+              <button class="pill-btn">
                 <span class="icon margin-right"
                   ><i class="fa-solid fa-heart"></i
                 ></span>
@@ -884,6 +884,39 @@
         </div>
       </section>
       <footer></footer>
+
+      <!-- Modals -->
+      <!-- Modal for Region and Currency Selection -->
+      <div id="regionModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h3 class="text-2">Display Settings</h3>
+          <p class="text-3 bold"><i class="fa-solid fa-triangle-exclamation"></i>Changing your region could change your rewards program</p>
+          <p class="text-3">
+            To stay with your current rewards program, keep your region the
+            same. One Key is currently only available in select regions.
+          </p>
+
+          <form>
+            <label for="region">Region</label>
+            <select id="region" name="region">
+              <option value="US">United States</option>
+              <option value="PT">Portugal</option>
+              <option value="UK">United Kingdom</option>
+              <option value="CA">Canada</option>
+            </select>
+
+            <label for="currency">Currency</label>
+            <input type="text" id="currency" name="currency" readonly />
+
+            <button type="button" class="save-btn">Save</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- scripts -->
+      <script src="script.js"></script>
     </main>
   </body>
 </html>
