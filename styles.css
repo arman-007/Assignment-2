@@ -68,8 +68,6 @@ h6 {
   isolation: isolate;
 }
 
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
 
 :root {
   --gutter: 8px; /* Define the gutter size */
@@ -83,6 +81,8 @@ i {
   margin-right: 8px;
 }
 
+/*<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -268,8 +268,9 @@ h1 {
 .secondary-btn{
   padding: 8px 16px;
   border-radius: 50px;
-  border: 2px solid rgb(70, 70, 220);
+  border: 2px solid rgb(90, 90, 120);
   color: rgb(70, 70, 220);
+  font-weight: 900;
 }
 
 .no-link {
@@ -308,8 +309,8 @@ h1 {
   font-weight: 600;
 }
 
-.back-link a {
-  text-decoration: none;
+.back-link {
+  align-self: center;
   color: rgb(54, 54, 234);
 }
 
@@ -637,9 +638,19 @@ h1 {
 }
 
 @media (max-width: 576px) {
+  :root {
+    --gutter: 8px; /* Define the gutter size */
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--gutter));
+  }
   .container {
     max-width: 540px;
     margin: 0 auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
   }
   .col-sm-1 {
     flex: 0 0 8.33%;
@@ -688,6 +699,10 @@ h1 {
   .col-sm-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 
   .nav {

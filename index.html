@@ -1,121 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Juneau Vacation Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-
-        <title>Test Document</title>
-    </head>
-
-    <body>
-        <header>
-
-        </header>
-        <main>
-            <h1>Practice Page</h1>
-            <div>
-
-                <h2>Quick hummus recipe</h2>
-
-                <p>This recipe makes quick, tasty hummus, with no messing. It
-                    has
-                    been adapted from a number of different recipes that I have
-                    read
-                    over the years.</p>
-
-                <p>Hummus is a delicious thick paste used heavily in Greek and
-                    Middle Eastern dishes. It is very tasty with salad, grilled
-                    meats and pitta breads.</p>
-
-                <h3>Ingredients</h3>
-
-                <ul>
-                    <li>1 can (400g) of chick peas (garbanzo beans)</li>
-                    <li>175g of tahini</li>
-                    <li>6 sundried tomatoes</li>
-                    <li>Half a red pepper</li>
-                    <li>A pinch of cayenne pepper</li>
-                    <li>1 clove of garlic</li>
-                    <li>A dash of olive oil</li>
-                </ul>
-
-                <h3>Instructions</h3>
-
-                <ol>
-                    <li>Remove the skin from the garlic, and chop coarsely.</li>
-                    <li>Remove all the seeds and stalk from the pepper, and chop
-                        coarsely.</li>
-                    <li>Add all the ingredients into a food processor.</li>
-                    <li>
-                        Process all the ingredients into a paste.
-                        <ul>
-                            <li>
-                                If you want a coarse "chunky" hummus, process it
-                                for
-                                a short time.
-                            </li>
-                            <li>If you want a smooth hummus, process it for a
-                                longer
-                                time.</li>
-                        </ul>
-                    </li>
-                </ol>
-
-                <p>For a different flavor, you could try blending in a small
-                    measure
-                    of lemon and coriander, chili pepper, lime and chipotle,
-                    harissa
-                    and mint, or spinach and feta cheese. Experiment and see
-                    what
-                    works for you.</p>
-
-                <h3>Storage</h3>
-
-                <p>Refrigerate the finished hummus in a sealed container. You
-                    should
-                    be able to use it for about a week after you've made it. If
-                    it
-                    starts to become fizzy, you should definitely discard
-                    it.</p>
-
-                <p>Hummus is suitable for freezing; you should thaw it and use
-                    it
-                    within a couple of months.</p>
+  <body>
+    <header class="top-bar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="nav text-3">
+              <a href="#"><i class="fa-solid fa-globe"></i>United States</a>
+              <a href="#">Trip Boards</a>
+              <a href="#">List your property</a>
+              <a href="#">Help</a>
+              <a href="#">My trips</a>
+              <a href="#">Sign in</a>
             </div>
-            <div>
-                <h2>Links:</h2>
-                <p>
-                    <a href="https://www.example.com/large-report.pdf">
-                        Download the sales report (PDF, 10MB)
-                    </a>
-                </p>
-
-                <p>
-                    <a href="https://www.example.com/video-stream/"
-                        target="_blank">
-                        Watch the video (stream opens in separate tab, HD
-                        quality)
-                    </a>
-                </p>
-
-                <p>
-                    <a
-                        href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
-                        download="firefox-latest-64bit-installer.exe">
-                        Download Latest Firefox for Windows (64-bit) (English,
-                        US)
-                    </a>
-
-                </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row margin-top margin-bottom">
+          <div class="col-xl-6 back-link">
+            <!-- <div class="back-link"> -->
+            <a class="no-link text-3" href="#">
+              <i class="fa-solid fa-arrow-left"></i>
+              See all properties
+            </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xl-6">
+            <div class="action-buttons">
+              <button class="share-btn pill-btn">
+                <span class="icon margin-right"
+                  ><i class="fa-solid fa-arrow-up-from-bracket"></i
+                ></span>
+                Share
+              </button>
+              <button class="save-btn pill-btn">
+                <span class="icon margin-right"
+                  ><i class="fa-solid fa-heart"></i
+                ></span>
+                Save
+              </button>
             </div>
-        </main>
-        <footer>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-sm-12">
+            <img
+              class="image-fluid"
+              src="images/gallery-image1.jpg"
+              alt="placeholder"
+            />
+          </div>
+          <div class="col-xl-6 col-sm-12">
+            <div class="row">
+              <div class="col-xl-6">
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image2.jpg"
+                  alt="placeholder"
+                />
+              </div>
+              <div class="col-xl-6">
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image3.jpg"
+                  alt="placeholder"
+                />
+              </div>
+              <div class="col-xl-6">
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image4.jpg"
+                  alt="placeholder"
+                />
+              </div>
+              <div class="col-xl-6">
+                <img
+                  class="image-fluid"
+                  src="images/gallery-image5.jpg"
+                  alt="placeholder"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="tab flex gap-1 bold text-3">
+              <a class="active-tab no-link padding" href="#">Overview</a>
+              <a class="no-link padding" href="#">Amenities</a>
+              <a class="no-link padding" href="#">Policies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 col-sm-12">
+            <p class="text-3">Entire home</p>
+            <h1 class="bold">
+              Juneau Vacation Home: Stunning View + Beach Access
+            </h1>
+            <div class="row rating">
+              <div class="col-xl-4 no-padding col-sm-12">
+                <p class="text-2 bold"><span>9.8</span> Exceptional</p>
+                <a class="text-3 bold" href="#"
+                  >See all 24 reviews <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="property-info">
+                  <div class="info-item">
+                    <i class="fa-solid fa-bed"></i>
+                    <span class="info-text text-3">2 bedrooms</span>
+                  </div>
+                  <div class="info-item">
+                    <i class="fa-solid fa-users-line"></i>
+                    <span class="info-text">Sleeps 4</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="property-info">
+                  <div class="info-item">
+                    <i class="fa-solid fa-users-line"></i>
+                    <span class="info-text">1 bathroom</span>
+                  </div>
+                  <div class="info-item">
+                    <i class="fa-solid fa-maximize"></i>
+                    <span class="info-text">1155 sq ft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <h3 class="text-2">Popular amenities</h3>
+              </div>
+            </div>
+            <div class="row text-3">
+              <div class="col-xl-6">
+                <div class="amenities">
+                  <div class="amenity-item">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Barbecue grill</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="fa-solid fa-campground"></i>
+                    <span>Outdoor Space</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <span>Kitchen</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="amenities">
+                  <div class="amenity-item">
+                    <i class="fa-solid fa-soap"></i>
+                    <span>Washer</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="fa-solid fa-square-parking"></i>
+                    <span>Parking available</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="fa-solid fa-cash-register"></i>
+                    <span>Dryer</span>
+                  </div>
+                </div>
+              </div>
 
-        </footer>
-    </body>
+              <a class="no-link" href="#">
+                See all property amenities &rarr;
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-xl-12 no-padding">
+                <h3 class="text-2 margin-top">Explore the AREA</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 no-padding col-sm-12">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe
+                      class="gmap_iframe"
+                      width="100%"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      src="https://maps.google.com/maps?width=380&amp;height=160&amp;hl=en&amp;q=juneau&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    ></iframe
+                    ><a href="https://sprunkin.com/">Sprunki Incredibox</a>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-xl-6 text-3 col-sm-12">
+                <div class="row">
+                  <div class="col-xl-8">
+                    <div class="location-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Auke Bay</span>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="location-item">
+                      <span>6 min Drive</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-8">
+                    <div class="location-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>University of Alaska- Southeast</span>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="location-item">
+                      <span>10 min Drive</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-8">
+                    <div class="location-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Mendenhall Golf Course</span>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="location-item">
+                      <span>14 min Drive</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-8">
+                    <div class="location-item">
+                      <i class="fa-solid fa-plane"></i>
+                      <span>Juneau, AK (JNU-Juneau Intl.)</span>
+                    </div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="location-item">
+                      <span>14 min Drive</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="view-more">
+                  <a class="no-link" href="#"
+                    >See all property amenities &rarr;</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!-- moved room section here -->
+            <div class="col-xl-8 col-sm-12">
+              <div class="room-bathroom-info">
+                <div class="row">
+                  <div class="col-xl-12 no-padding">
+                    <p class="text-1">Rooms & Beds</p>
+                    <p class="text-2 bold">
+                      2 Bedrooms <span class="text-3">(sleeps 4)</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="row text-3 border-bottom padding-bottom">
+                  <div class="col-xl-6 no-padding">
+                    <p class="bold">Bedroom 1</p>
+                    <i class="fa-solid fa-bed"></i>
+                    <p>1 queen bed</p>
+                  </div>
+                  <div class="col-xl-6">
+                    <p class="bold">Bedroom 2</p>
+                    <i class="fa-solid fa-bed"></i>
+                    <p>1 twin bed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row border-bottom padding-bottom">
+                <div class="col-xl-12 no-padding">
+                  <p class="text-2 bold">1 Bathroom</p>
+                  <p class="text-3 bold">Full Bathroom</p>
+                </div>
+              </div>
+              <div class="row padding-bottom padding-top">
+                <div class="col-xl-12 no-padding col-sm-12">
+                  <p class="text-1 padding-bottom padding-top">Spaces</p>
+                  <div class="spaces text-3">
+                    <div class="space-item">
+                      <i class="fa-solid fa-holly-berry"></i>
+                      <span>Deck or patio</span>
+                    </div>
+                    <div class="space-item">
+                      <i class="fa-solid fa-kitchen-set"></i>
+                      <span>Kitchen</span>
+                    </div>
+                    <div class="space-item">
+                      <i class="fa-regular fa-building"></i>
+                      <span>Balcony</span>
+                    </div>
+                    <div class="space-item">
+                      <i class="fa-solid fa-tree"></i>
+                      <span>Garden</span>
+                    </div>
+                  </div>
+                  <a class="no-link" href="#">See all rooms and beds details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12">
+            <div class="row right-sidebar">
+              <div class="col-xl-12 membership-info">
+                <div class="row">
+                  <div class="col-xl-4">
+                    <div class="membership-icon">
+                      <i class="fa-solid fa-fan"></i>
+                    </div>
+                  </div>
+                  <div class="col-xl-8">
+                    <div class="membership-content">
+                      <p>Members get our best prices when signed in!</p>
+                      <button class="sign-in-btn pill-btn">Sign in</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 card">
+                <div class="price">
+                  <h2 class="text-2">$134 <span>per night</span></h2>
+                </div>
+                <div class="cancellation">
+                  <p class="cancellation-info">
+                    <span>Free cancellation 🛈</span> <br />(Before Mon, Nov 4)
+                  </p>
+                  <p class="availability">✅ Your dates are available</p>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="date-input card">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <div>
+                        <label>Start date</label>
+                        <div class="date-box">Nov 18</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="date-input card">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <div>
+                        <label>End date</label>
+                        <div class="date-box">Nov 20</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 card travelers">
+                  <label>Travelers</label>
+                  <div class="date-box">2 travelers</div>
+                </div>
+                <div class="flex">
+                  <div class="col-xl-8">
+                    <p class="total-price">
+                      <strong>Total: </strong>
+                    </p>
+                  </div>
+                  <div class="col-xl-4 flex justify-content-end">
+                    <p class="total-price">
+                      <strong>$500</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="col-xl-8">
+                    <p class="total-price">Total includes fees, not tax</p>
+                  </div>
+                  <div class="col-xl-4 flex justify-content-end">
+                    <p class="total-price">
+                      <a href="#">Price details</a>
+                    </p>
+                  </div>
+                </div>
+                <button class="book-now-btn pill-btn">Book now</button>
+                <p class="disclaimer text-3">You will not be charged yet</p>
+              </div>
+              <div class="col-xl-12 text-3 contact-host">
+                <p>Contact host</p>
+              </div>
+              <div class="col-xl-12 text-4 property-number">
+                <p><span class="bold">Property # </span>123456789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-sm-12">
+              <p class="text-1 margin-big-y">About this property</p>
+              <p class="text-2 margin-bottom">
+                Juneau Vacation Home: Stunning View + Beach Access
+              </p>
+              <p class="text-normal">
+                Escape to the mountains and experience the great outdoors at
+                this lovely Juneau vacation rental! Perched on the shore of Lena
+                Cove, this 2-bedroom, I-bath home is the perfect getaway for
+                those looking to enjoy a relaxing retreat surrounded by nature.
+                Spend your day fishing for King Salmon, exploring Lena Beach and
+                the rocky coastline, or hiking the nearby trails. After your
+                outdoor adventure, kick back on the private deck and admire the
+                breathtaking panoramic views!
+              </p>
+              <p class="text-3 margin-y">--THE PROPERTY--</p>
+              <p class="normal-text">
+                CBJ1000104 | 1,115 Sq Ft | 2 Private Decks I Lena Cove &
+                Mountain Views | 2 Bicycles Provided
+              </p>
+              <p class="normal-text">
+                Bedroom 1: Queen Bed, Full Floor Mattress I Bedroom 2: Extra
+                Long Twin Bed
+              </p>
+              <p class="normal-text">
+                HOME HIGHLIGHTS: Flat-screen TV, dining table, washer/dryer
+                KITCHEN: Fridge, stove, coffee maker, microwave, cooking basics,
+                toaster, dishware/flatware, trash bags/paper towels, Crockpot
+                GENERAL: Free WiFi, central heating, linens/towels, keyless
+                entry, hair dryer, ceiling fans FAQ: No A/C, stairs required to
+                access PARKING: Driveway (2 vehicles), RV parking allowed
+              </p>
+              <p class="text-3 margin-y">--THE LOCATION--</p>
+              <p class="normal-text">
+                GREAT OUTDOORS: Lena Cove (on-site), Lena Beach Recreation Area
+                (0.5 miles), Glacier Gardens Rainforest Adventure (10 miles),
+                Mendenhall Glacier (10 miles), Twin Lakes (13 miles)
+              </p>
+              <p class="normal-text">
+                THINGS TO DO: Mendenhall Golf (8 miles), Diamond Park Aquatic
+                Center (8 miles), Riverside Rotary Park (8 miles), Alaska State
+                Museum (16 miles), Last Chance Mining Museum (18 miles), AJ Mine
+                Gastineau Mill Tours (20 miles)
+              </p>
+              <p class="normal-text">
+                LOCAL FARE: Forbidden Peak Brewery (5 miles), The Grind Coffee
+                Company (7 miles), Four Plates Cocina Peruana (7 miles), Sandbar
+                & Grill (7 miles), Zerelda's Bistro (8 miles), Donna's
+                Restaurant (9 miles), Alaskan Brewing Co. (13 miles)
+              </p>
+              <p class="normal-text">
+                AIRPORT: Juneau International Airport (9 miles)
+              </p>
+              <p class="text-3 margin-y">--REST EASY WITH US--</p>
+              <p class="normal-text">
+                Evolve makes it easy to find and book properties you'll never
+                want to leave. You can relax knowing that our properties will
+                always be ready for you and that we'll answer the phone 24/7.
+                Even better, if anything is off about your stay, we'll make it
+                right. You can count on our homes and our people to make you
+                feel welcome--because we know what vacation means to you.
+              </p>
+              <p class="text-3 margin-y">--POLICIES--</p>
+              <p class="normal-text">-No smoking</p>
+              <p class="normal-text">-No pets allowed</p>
+              <p class="normal-text">
+                -No events, parties, or large gatherings
+              </p>
+              <p class="normal-text">-Must be at least 25 years old to book</p>
+              <p class="normal-text">-Additional fees and taxes may apply</p>
+              <p class="normal-text">-Photo ID may be required upon check-in</p>
+              <p class="normal-text">
+                -NOTE: The property requires stairs to access
+              </p>
+              <p class="normal-text">
+                -NOTE: The property does not have air conditioning
+              </p>
+              <p class="normal-text">
+                -NOTE: The property sleeps 3 guests in 2 beds, with room for 4
+                total by using the full floor mattress
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8 property-manager-details margin-y">
+              <p class="text-2">Property Manager</p>
+              <i class="fa-brands fa-pagelines"></i>
+              <p class="normal-text">Evolve</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-8 margin-y">
+              <p class="text-2">Languages</p>
+              <p class="normal-text">English, French, German, Spanish</p>
+            </div>
+          </div>
+          <div class="row margin-big-y">
+            <div class="col-xl-8 margin-big-y col-sm-12">
+              <div class="row">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">Amenities</p>
+                </div>
+                <div class="col-xl-4 text-3 col-sm-6">
+                  <div class="amenities-info">
+                    <div class="info-item">
+                      <i class="fa-solid fa-kitchen-set"></i>
+                      <span class="info-text">Kitchen</span>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa-solid fa-cash-register"></i>
+                      <span class="info-text">Dryer</span>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa-solid fa-soap"></i>
+                      <span class="info-text">Washer</span>
+                    </div>
+                  </div>
+                  <a class="no-link bold" href="#">
+                    See all 34 amenities &rarr;
+                  </a>
+                </div>
+                <div class="col-xl-4 text-3 col-sm-6">
+                  <div class="amenities-info">
+                    <div class="info-item">
+                      <i class="fa-solid fa-water"></i>
+                      <span class="info-text">Ocean View</span>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa-solid fa-campground"></i>
+                      <span class="info-text">Outer Space</span>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa-solid fa-square-parking"></i>
+                      <span class="info-text">Parking Available</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row card query">
+            <div class="col-xl-12">
+              <div class="row">
+                <div class="col-xl-11 col-sm-9">
+                  <p class="text-1">Have a question?</p>
+                </div>
+                <div class="col-xl-1 col-sm-3">
+                  <div class="beta bold">
+                    <i class="fa-regular fa-star"></i>Beta
+                  </div>
+                </div>
+                <div class="col-xl-12 col-sm-12">
+                  <p class="text-3">
+                    Get instant answers with Al powered search of property
+                    information and reviews.
+                  </p>
+                </div>
+              </div>
+              <div class="row query-input flex">
+                <div class="col-xl-11 col-sm-10">
+                  <div class="search-box">
+                    <span class="search-icon"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                    <input
+                      type="text"
+                      placeholder="Ask a question"
+                      class="search-input"
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-1 col-sm-2">
+                  <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="row margin-big-y">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">House Rules</p>
+                </div>
+                <div class="col-xl-8 col-sm-12">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <p class="normal-text">Check in after 3:00 PM</p>
+                      <p class="normal-text">Check out before 11:00 AM</p>
+                    </div>
+                    <div class="col-xl-6">
+                      <p class="normal-text">Minimum age to rent: 25</p>
+                    </div>
+                  </div>
+                  <div class="row house-rules">
+                    <div class="col-xl-6">
+                      <div class="margin-y">
+                        <div class="flex">
+                          <i class="fa-solid fa-child-reaching"></i>
+                          <p class="text-2">Children</p>
+                        </div>
+                        <p class="normal-text">Children allowed: ages 0-17</p>
+                      </div>
+                      <div class="margin-y">
+                        <div class="flex">
+                          <i class="fa-solid fa-dog"></i>
+                          <p class="text-2">Pets</p>
+                        </div>
+                        <p class="normal-text">No pets allowed</p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div>
+                        <div class="margin-y">
+                          <div class="flex">
+                            <i class="fa-regular fa-calendar-xmark"></i>
+                            <p class="text-2">Events</p>
+                          </div>
+                          <p class="normal-text">No events allowed</p>
+                        </div>
+                        <div class="margin-y">
+                          <div class="flex">
+                            <i class="fa-solid fa-ban-smoking"></i>
+                            <p class="text-2">Smoking</p>
+                          </div>
+                          <p class="normal-text">Smoking is not permitted</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row margin-big-y">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">Damage and Incidents</p>
+                </div>
+                <div class="col-xl-8 col-sm-12">
+                  <p class="normal-text">
+                    You will be responsible for any damage to the rental
+                    property caused by you or your party during your stay.
+                  </p>
+                </div>
+              </div>
+              <div class="row margin-big-y">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">Cancellation</p>
+                </div>
+                <div class="col-xl-8 col-sm-12">
+                  <div class="timeline-container">
+                    <div class="timeline-item">
+                      <div class="circle filled"></div>
+                      <p class="timeline-label">Today</p>
+                      <p class="timeline-status">Full refund</p>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="circle outlined"></div>
+                      <p class="timeline-label">Nov 4</p>
+                      <p class="timeline-status">No refund</p>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="circle outlined"></div>
+                      <p class="timeline-label">Check-in</p>
+                    </div>
+                  </div>
+                  <div class="row margin-y">
+                    <div class="col-xl-2">
+                      <p class="normal-text">Before</p>
+                      <p class="text-3 bold">Nov 4</p>
+                    </div>
+                    <div class="col-xl-10">
+                      <p class="text-3 bold">Full Refund</p>
+                      <p class="normal-text">
+                        Cancel your reservation before Nov 4 at 11:59 PM, and
+                        you'll get a full refund. Times are based on the
+                        property's local time.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row margin-y">
+                    <div class="col-xl-2">
+                      <p class="normal-text">After</p>
+                      <p class="text-3 bold">Nov 4</p>
+                    </div>
+                    <div class="col-xl-10">
+                      <p class="text-3 bold">No Refund</p>
+                      <p class="normal-text">
+                        After that, you won't get a refund
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row margin-big-y">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">Important Information</p>
+                </div>
+                <div class="col-xl-8 col-sm-12">
+                  <p class="text-2 margin-y">You need to know</p>
+                  <p class="normal-text margin-y">
+                    Extra-person charges may apply and vary depending on
+                    property policy
+                  </p>
+                  <p class="normal-text margin-y">
+                    Government-issued photo identification and a credit card,
+                    debit card, or cash deposit may be required at check-in for
+                    incidental charges
+                  </p>
+                  <p class="normal-text margin-y">
+                    Special requests are subject to availability upon check-in
+                    and may incur additional charges; special requests cannot be
+                    guaranteed
+                  </p>
+                  <p class="normal-text margin-y">
+                    Onsite parties or group events are strictly prohibited
+                  </p>
+                  <p class="normal-text margin-y">
+                    Host has indicated there is a carbon monoxide detector on
+                    the property
+                  </p>
+                  <p class="normal-text margin-y">
+                    Host has indicated there is a smoke detector on the property
+                  </p>
+                  <p class="normal-text margin-y">
+                    Safety features at this property include a fire extinguisher
+                    and a first aid kit
+                  </p>
+                </div>
+              </div>
+              <div class="row margin-big-y">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">Frequently asked questions</p>
+                </div>
+                <div class="col-xl-8 col-sm-12">
+                  <p class="normal-text margin-y">
+                    <i class="fa-solid fa-angle-down"></i>
+                    Is Juneau Vacation Home: Stunning View + Beach Access
+                    pet-friendly?
+                  </p>
+                  <p class="normal-text margin-y">
+                    <i class="fa-solid fa-angle-down"></i>
+                    What time is check-in at Juneau Vacation Home: Stunning View
+                    + Beach Access?
+                  </p>
+                  <p class="normal-text margin-y">
+                    <i class="fa-solid fa-angle-down"></i>
+                    What time is check-out at Juneau Vacation Home: Stunning
+                    View + Beach Access?
+                  </p>
+                  <p class="normal-text margin-y">
+                    <i class="fa-solid fa-angle-down"></i>
+                    Where is Juneau Vacation Home: Stunning View + Beach Access
+                    located?
+                  </p>
+                </div>
+              </div>
+              <div class="row margin-big-y">
+                <div class="col-xl-3 col-sm-12">
+                  <p class="big-rating">9.8/10</p>
+                  <p class="text-1">Exceptional</p>
+                  <p>24 Reviews <i class="fa-solid fa-circle-info"></i></p>
+                  <p class="text-4">
+                    Reviews are verified unless labeled otherwise
+                  </p>
+                </div>
+                <div class="col-xl-9 col-sm-12">
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <p>Recent Reviews</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 col-sm-10">
+                      <div class="card">
+                        <p class="bold margin-y">10/10 Excellent</p>
+                        <p>
+                          A very cozy home for the two of us in a quiet area NW
+                          of town. Beautiful water view. We enjoyed the art,
+                          read up in it and visited the...
+                        </p>
+                        <a class="no-link" href="#">Read more</a>
+                        <div class="margin-big-y">
+                          <p>Kyle G.</p>
+                          <p>Sep 25, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-10">
+                      <div class="card">
+                        <p class="bold margin-y">10/10 Excellent</p>
+                        <p>
+                          The cottage was just as the pictures and description
+                          stated. Beautiful water view. Nice quiet area and
+                          great view of the cove..
+                        </p>
+                        <a class="no-link" href="#">Read more</a>
+                        <div class="margin-big-y">
+                          <p>Cindy B.</p>
+                          <p>Sep 25, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="secondary-btn margin-y">
+                    See all 24 reviews
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="row margin-big-y">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">About the host</p>
+                </div>
+                <div class="col-xl-8 col-sm-12">
+                  <p class="text-2 bold">Hosted by Evolve</p>
+
+                  <div class="margin-big-y">
+                    <p class="text-2 bold">Languages</p>
+                    <p class="normal-text">English, French, German, Spanish</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row margin-big-y">
+                <div class="col-xl-4 col-sm-12">
+                  <p class="text-1">Send a message</p>
+                </div>
+                <div class="col-xl-8">
+                  <button class="secondary-btn">Contact Host</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer></footer>
+    </main>
+  </body>
 </html>
