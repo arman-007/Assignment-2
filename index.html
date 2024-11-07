@@ -27,7 +27,9 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="nav text-3">
-              <a href="#" id="regionLink"><i class="fa-solid fa-globe"></i> United States</a>
+              <a href="#" id="regionLink"
+                ><i class="fa-solid fa-globe"></i> United States</a
+              >
               <a href="#">Trip Boards</a>
               <a href="#">List your property</a>
               <a href="#">Help</a>
@@ -49,18 +51,101 @@
           </div>
           <div class="col-xl-6">
             <div class="action-buttons">
-              <button class="share-btn pill-btn">
+              <button id="shareBtn" class="share-btn pill-btn">
                 <span class="icon margin-right"
                   ><i class="fa-solid fa-arrow-up-from-bracket"></i
                 ></span>
                 Share
               </button>
-              <button class="pill-btn">
-                <span class="icon margin-right"
-                  ><i class="fa-solid fa-heart"></i
-                ></span>
+              <button id="saveBtn" class="pill-btn">
+                <span class="icon margin-right">
+                  <i id="heartIcon" class="fa-regular fa-heart"></i>
+                </span>
                 Save
               </button>
+            </div>
+          </div>
+
+          <!-- Share Modal -->
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div id="shareModal" class="share-modal">
+                  <div class="share-modal-content">
+                    <span id="dismissShareModal" class="close"><i class="fa-solid fa-xmark"></i></span>
+                    <h3>Share</h3>
+                    <div class="container">
+                      <div class="row property-info">
+                        <div class="col-xl-4"><img
+                          src="images/gallery-image1.jpg"
+                          alt="Property Image"
+                        /></div>
+                        <div class="col-xl-8"><p class="bold">
+                          Juneau Vacation Home: Stunning View + Beach Access
+                        </p>
+                        <p>United States of America</p>
+                        <p>9.8/10</p></div>
+                      </div>
+                    </div>
+                    <!-- social share options -->
+                    <div class="share-options">
+                      <div class="row">
+                        <div class="col-xl-4">
+                          <button class="social-btn">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <p class="text-4 bold" style="text-align: center">
+                              X
+                            </p>
+                          </button>
+                        </div>
+                        <div class="col-xl-4">
+                          <button class="social-btn">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <p class="text-4 bold" style="text-align: center">
+                              WhatsApp
+                            </p>
+                          </button>
+                        </div>
+                        <div class="col-xl-4">
+                          <button class="social-btn">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p class="text-4 bold" style="text-align: center">
+                              Facebook
+                            </p>
+                          </button>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-4">
+                          <button class="social-btn">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                            <p class="text-4 bold" style="text-align: center">
+                              Messenger
+                            </p>
+                          </button>
+                        </div>
+                        <div class="col-xl-4">
+                          <button class="social-btn">
+                            <i class="fa-brands fa-telegram"></i>
+                            <p class="text-4 bold" style="text-align: center">
+                              Telegram
+                            </p>
+                          </button>
+                        </div>
+                        <div class="col-xl-4">
+                          <button id="copyLinkBtn" class="social-btn">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            <p class="text-4 bold" style="text-align: center">
+                              Copy link
+                            </p>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -103,6 +188,36 @@
                 />
               </div>
             </div>
+          </div>
+        </div>
+        <div class="view-all-button">
+          <button id="openGalleryBtn">+ 30 Photos</button>
+        </div>
+
+        <!-- Gallery Modal -->
+        <div id="galleryModal" class="gallery-modal">
+          <div class="gallery-content">
+            <!-- Close/Dismiss Button -->
+            <span id="closeModal" class="close">&times;</span>
+
+            <!-- Image Display -->
+            <img
+              id="galleryImage"
+              src="images/gallery-image1.jpg"
+              alt="Gallery Image"
+            />
+
+            <!-- Previous and Next Buttons -->
+            <a class="prev" id="prevBtn">&#10094;</a>
+            <a class="next" id="nextBtn">&#10095;</a>
+
+            <!-- Caption for Image -->
+            <div id="galleryCaption" class="caption-text">
+              Juneau Vacation Rental | 2BR | 1BA | 1,115 Sq Ft | Stairs Required
+            </div>
+
+            <!-- Count Indicator -->
+            <div id="galleryCount" class="image-count">1 / 5</div>
           </div>
         </div>
       </div>
@@ -395,10 +510,47 @@
                     </div>
                   </div>
                 </div>
+                <!-- Traveler Counter Modal  -->
                 <div class="col-xl-12 card travelers">
                   <label>Travelers</label>
-                  <div class="date-box">2 travelers</div>
+                  <div id="travelerBox" class="date-box">2 travelers</div>
+
+                  <!-- Traveler Selection Box (Hidden initially) -->
+                  <div id="travelerModal" class="traveler-modal hidden">
+                    <div class="traveler-options">
+                      <div class="option">
+                        <p>Adults</p>
+                        <div class="controls">
+                          <button class="decrement" id="decrementAdults">
+                            -
+                          </button>
+                          <span id="adultCount">2</span>
+                          <button class="increment" id="incrementAdults">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                      <div class="option">
+                        <p>Children <span>(Ages 0 to 17)</span></p>
+                        <div class="controls">
+                          <button
+                            class="decrement"
+                            id="decrementChildren"
+                            disabled
+                          >
+                            -
+                          </button>
+                          <span id="childCount">0</span>
+                          <button class="increment" id="incrementChildren">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="saveTravelers" class="save-btn">Save</button>
+                  </div>
                 </div>
+
                 <div class="flex">
                   <div class="col-xl-8">
                     <p class="total-price">
@@ -891,7 +1043,10 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <h3 class="text-2">Display Settings</h3>
-          <p class="text-3 bold"><i class="fa-solid fa-triangle-exclamation"></i>Changing your region could change your rewards program</p>
+          <p class="text-3 bold">
+            <i class="fa-solid fa-triangle-exclamation"></i>Changing your region
+            could change your rewards program
+          </p>
           <p class="text-3">
             To stay with your current rewards program, keep your region the
             same. One Key is currently only available in select regions.
@@ -909,11 +1064,10 @@
             <label for="currency">Currency</label>
             <input type="text" id="currency" name="currency" readonly />
 
-            <button type="button" class="save-btn">Save</button>
+            <button id="saveRegion" type="button" class="save-btn">Save</button>
           </form>
         </div>
       </div>
-
 
       <!-- scripts -->
       <script src="script.js"></script>
