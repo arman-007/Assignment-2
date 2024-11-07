@@ -121,7 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Open traveler selection modal when clicked
   travelerBox.addEventListener("click", () => {
-    travelerModal.classList.toggle("hidden");
+    travelerModal.style.display = "block";
+    // travelerModal.classList.toggle("hidden");
   });
 
   // Increment or decrement adults count
@@ -163,7 +164,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Save button to close modal
   saveTravelers.addEventListener("click", () => {
-    travelerModal.classList.add("hidden");
+    travelerModal.style.display = "None";
+    // travelerModal.classList.add("hidden");
+
   });
 
   // Update traveler count display in the box
@@ -173,6 +176,11 @@ document.addEventListener("DOMContentLoaded", () => {
       totalTravelers > 1 ? "s" : ""
     }`;
   }
+
+  // // Close modal when user clicks outside of the modal content
+  // window.addEventListener("click", () => {
+  //   travelerModal.style.display = "none";
+  // });
 });
 
 // Gallery Modal 
