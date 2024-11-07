@@ -70,11 +70,13 @@ h6 {
 
 
 :root {
-  --gutter: 8px; /* Define the gutter size */
+  --gutter: 8px;
+  /* Define the gutter size */
 }
 
 body {
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-x: hidden;
+  /* Prevent horizontal scrollbar */
 }
 
 i {
@@ -176,26 +178,35 @@ i {
 h1 {
   font-size: 40px;
 }
+
 .text-1 {
   font-size: 32px;
   font-weight: 600;
 }
+
 .text-2 {
   font-size: 24px;
   font-weight: 500;
 }
+
 .text-3 {
   font-size: 16px;
   font-weight: 400;
 }
+
 .text-4 {
   font-size: 12px;
   font-weight: 300;
 }
+.text-fade{
+  opacity: 70%;
+}
+
 .normal-text {
   font-size: 16;
   font-weight: 200;
 }
+
 .bold {
   font-weight: 600;
 }
@@ -203,24 +214,31 @@ h1 {
 .margin-top {
   margin-top: 8px;
 }
+
 .margin-bottom {
   margin-bottom: 8px;
 }
+
 .margin-right {
   margin-right: 8px;
 }
+
 .margin-left {
   margin-left: 8px;
 }
+
 .margin-x {
   margin: 0 8px;
 }
+
 .margin-y {
   margin: 8px 0;
 }
+
 .margin-big-x {
   margin: 0 32px;
 }
+
 .margin-big-y {
   margin: 32px 0;
 }
@@ -228,18 +246,23 @@ h1 {
 .padding {
   padding: 8px;
 }
-.no-padding{
+
+.no-padding {
   padding: 0;
 }
+
 .padding-top {
   padding-top: 8px;
 }
+
 .padding-bottom {
   padding-bottom: 8px;
 }
+
 .padding-right {
   padding-right: 8px;
 }
+
 .padding-left {
   padding-left: 8px;
 }
@@ -256,6 +279,7 @@ h1 {
 .justify-center {
   justify-content: center;
 }
+
 .justify-content-end {
   justify-content: flex-end;
 }
@@ -265,10 +289,12 @@ h1 {
   border-radius: 20px;
   padding: 8px 16px;
 }
-.pill-btn:hover{
+
+.pill-btn:hover {
   cursor: pointer;
 }
-.secondary-btn{
+
+.secondary-btn {
   padding: 8px 16px;
   border-radius: 50px;
   border: 2px solid rgb(90, 90, 120);
@@ -325,7 +351,8 @@ h1 {
   align-items: center;
   gap: 5px;
 }
-.action-buttons #heartIcon{
+
+.action-buttons #heartIcon {
   color: red;
 }
 
@@ -335,7 +362,7 @@ h1 {
   max-width: 1200px;
 }
 
-.tab a{
+.tab a {
   color: black;
 }
 
@@ -350,12 +377,14 @@ h1 {
   width: 100%;
   height: 160px;
 }
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   width: 100%;
   height: 160px;
 }
+
 .gmap_iframe {
   height: 160px !important;
 }
@@ -363,12 +392,14 @@ h1 {
 .query {
   background-color: rgb(190, 233, 233);
 }
+
 .query-input {
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: center;
 }
+
 .search-box {
   display: flex;
   align-items: center;
@@ -387,6 +418,7 @@ h1 {
   margin-right: 10px;
   font-size: 20px;
 }
+
 .search-input {
   border: none;
   outline: none;
@@ -394,9 +426,11 @@ h1 {
   font-size: 16px;
   color: #333;
 }
+
 .search-input::placeholder {
   color: #888;
 }
+
 .search-btn {
   width: 50px;
   height: 50px;
@@ -410,16 +444,18 @@ h1 {
   justify-content: center;
   font-size: 20px;
   font-weight: bold;
-} 
+}
 
 .rating {
   margin: 8px 0;
 }
+
 .rating a {
   text-decoration: none;
   font-weight: 500;
   margin-top: 8px;
 }
+
 .rating span {
   background: darkgreen;
   padding: 8px;
@@ -444,6 +480,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
 .membership-icon i {
   font-size: 80px;
   color: white;
@@ -473,9 +510,11 @@ h1 {
   border-bottom: 1px solid #e0e1ed;
   padding-bottom: 16px;
 }
+
 .price h2 {
   font-weight: 700;
 }
+
 .price span {
   font-weight: 400;
   font-size: 20px;
@@ -485,6 +524,7 @@ h1 {
   padding: 16px 0;
   font-size: 20px;
 }
+
 .cancellation .availability {
   padding: 8px 0;
 }
@@ -494,25 +534,31 @@ h1 {
   align-items: center;
   gap: 8px;
 }
+
 .date-input i {
   font-size: 28px;
 }
+
 .date-input label {
   font-size: 20px;
 }
+
 .date-input .date-box {
   font-size: 24px;
   font-weight: 500;
 }
+
 .travelers {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 16px;
 }
+
 .travelers label {
   font-size: 20px;
 }
+
 .travelers .date-box {
   font-size: 24px;
   font-weight: 500;
@@ -563,7 +609,7 @@ h1 {
   padding: 4px 8px;
 }
 
-.house-rules .flex{
+.house-rules .flex {
   flex-direction: row;
   align-items: center;
 }
@@ -638,7 +684,7 @@ h1 {
   font-weight: 600;
 }
 
-.big-rating{
+.big-rating {
   font-size: 72px;
   color: green;
 }
@@ -649,14 +695,16 @@ h1 {
 
 /* Modal Container */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
-  z-index: 100; /* Ensure it's above other elements */
+  z-index: 100;
+  /* Ensure it's above other elements */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark transparent background */
 }
 
 /* Modal Content Box */
@@ -673,9 +721,11 @@ h1 {
 
 /* Close Button Styling */
 .close-btn {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #1a1717;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -722,7 +772,8 @@ form input {
 }
 
 .travelers {
-  position: relative; /* Parent element is positioned relative */
+  position: relative;
+  /* Parent element is positioned relative */
   padding: 20px;
 }
 
@@ -734,9 +785,10 @@ form input {
   position: absolute;
   z-index: 10;
   margin-top: 10px;
-  width: auto;
-  top: 60px;
+  width: 100%;
+  top: 80px;
   left: 0;
+  display: none;
 }
 
 .option {
@@ -782,14 +834,17 @@ form input {
 /* Gallery Modal  */
 /* Gallery Modal  */
 .gallery-modal {
-  display: none; /* Hidden by default */
-  position: fixed; 
-  z-index: 1000; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black background with transparency */
 }
 
 .gallery-content {
@@ -805,7 +860,7 @@ form input {
   height: auto;
 }
 
-.close {
+.regular-x-close {
   position: absolute;
   top: 10px;
   right: 25px;
@@ -814,7 +869,8 @@ form input {
   cursor: pointer;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -851,14 +907,17 @@ form input {
 
 /* Styles for the Share Modal */
 .share-modal {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
-  z-index: 1000; /* Stay on top */
+  z-index: 1000;
+  /* Stay on top */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black background with opacity */
 }
 
 .share-modal-content {
@@ -879,6 +938,10 @@ form input {
   color: #1a1717;
   font-size: 25px;
   cursor: pointer;
+}
+
+.close:hover {
+  color: black;
 }
 
 .property-info {
@@ -902,12 +965,14 @@ form input {
   flex-direction: row;
   align-content: center;
 }
-.share-options .row{
+
+.share-options .row {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-.share-options i{
+
+.share-options i {
   font-size: 40px;
 }
 
@@ -926,22 +991,27 @@ form input {
   background-color: #ddd;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
   color: #075E54;
 }
-.fa-facebook{
+
+.fa-facebook {
   color: #1877F2;
 }
-.fa-twitter{
+
+.fa-twitter {
   color: #1DA1F2;
 }
-.fa-facebook-messenger{
+
+.fa-facebook-messenger {
   color: #0073e6;
 }
-.fa-telegram{
+
+.fa-telegram {
   color: #24A1DE;
 }
-.fa-clipboard-list{
+
+.fa-clipboard-list {
   color: rgb(59, 59, 59);
 }
 
@@ -952,63 +1022,78 @@ form input {
 
 @media (max-width: 576px) {
   :root {
-    --gutter: 8px; /* Define the gutter size */
+    --gutter: 8px;
+    /* Define the gutter size */
   }
+
   .row {
     display: flex;
     flex-wrap: wrap;
     margin: calc(-1 * var(--gutter));
   }
+
   .container {
     max-width: 540px;
     margin: 0 auto;
     padding-left: var(--gutter);
     padding-right: var(--gutter);
   }
+
   .col-sm-1 {
     flex: 0 0 8.33%;
     max-width: 8.33%;
   }
+
   .col-sm-2 {
     flex: 0 0 16.66%;
     max-width: 16.66%;
   }
+
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%;
   }
+
   .col-sm-4 {
     flex: 0 0 33.33%;
     max-width: 33.33%;
   }
+
   .col-sm-5 {
     flex: 0 0 41.66%;
     max-width: 41.66%;
   }
+
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .col-sm-7 {
     flex: 0 0 58.33%;
     max-width: 58.33%;
   }
+
   .col-sm-8 {
     flex: 0 0 66.66%;
     max-width: 66.66%;
   }
+
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%;
   }
+
   .col-sm-10 {
     flex: 0 0 83.33%;
     max-width: 83.33%;
   }
+
   .col-sm-11 {
     flex: 0 0 91.66%;
     max-width: 91.66%;
   }
+
   .col-sm-12 {
     flex: 0 0 100%;
     max-width: 100%;

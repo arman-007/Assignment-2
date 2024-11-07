@@ -72,7 +72,7 @@
               <div class="col-xl-12">
                 <div id="shareModal" class="share-modal">
                   <div class="share-modal-content">
-                    <span id="dismissShareModal" class="close"><i class="fa-solid fa-xmark"></i></span>
+                    <span id="dismissShareModal" class="close regular-x-close"><i class="fa-solid fa-xmark"></i></span>
                     <h3>Share</h3>
                     <div class="container">
                       <div class="row property-info">
@@ -1038,10 +1038,10 @@
       <footer></footer>
 
       <!-- Modals -->
-      <!-- Modal for Region and Currency Selection -->
+      <!-- Modal for Region modal and Currency Selection -->
       <div id="regionModal" class="modal">
         <div class="modal-content">
-          <span class="close-btn">&times;</span>
+          <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
           <h3 class="text-2">Display Settings</h3>
           <p class="text-3 bold">
             <i class="fa-solid fa-triangle-exclamation"></i>Changing your region
@@ -1062,7 +1062,7 @@
             </select>
 
             <label for="currency">Currency</label>
-            <input type="text" id="currency" name="currency" readonly />
+            <input class="text-fade" type="text" id="currency" name="currency" readonly />
 
             <button id="saveRegion" type="button" class="save-btn">Save</button>
           </form>
