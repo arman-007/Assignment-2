@@ -1,44 +1,66 @@
-# Juneau Vacation Home Project
+# Project: Juneau Vacation Home Website
 
 ## Overview
-This project represents a detailed webpage for a vacation rental property titled "Juneau Vacation Home: Stunning View + Beach Access." The project showcases a comprehensive and elegant way to represent property listings for a rental or travel website, utilizing HTML and CSS. The goal was to replicate a modern, aesthetically pleasing layout similar to vacation property rental sites like Airbnb.
+This project is a fully responsive website for a vacation home rental in Juneau. The website provides detailed information about the property, amenities, pricing, gallery, and booking options, making it easy for potential guests to learn more about the property and make a reservation.
 
-The main components of the project include the use of images, property details, booking options, user interaction buttons (like "Share" and "Save"), and an organized section to show amenities, room details, house rules, and other key information about the rental property.
+## Features
+- **Gallery View**: A beautiful gallery of the property, including mobile-friendly carousels.
+- **Responsive Design**: Optimized for both desktop and mobile views, ensuring a great experience for all users.
+- **Booking Information**: Details about availability, pricing, and cancellation policies.
+- **Map Integration**: Embedded Google Maps to help guests locate the property and nearby attractions.
+- **Social Sharing**: Ability to share the property through different social platforms (X, Facebook, WhatsApp, Telegram).
 
-## Key Features
-- **Top Navigation Bar**: Displays navigational links like "United States," "Trip Boards," "Help," and "Sign in."
-- **Image Gallery**: Features a prominent main image and four smaller images arranged alongside for a gallery view of the property.
-- **Property Details**: Sections for amenities, location, rooms, and beds, using a mix of icons and descriptive text.
-- **Booking Section**: Contains pricing, available dates, traveler selection, and booking buttons, similar to commercial booking platforms.
-- **Interactive Elements**: Buttons for "Share," "Save," and a "Sign in" prompt for member-only pricing.
-- **Responsiveness**: The webpage includes responsive design using media queries to adapt to different screen sizes, including specific styles for mobile devices.
+## Technology Stack
+- **HTML5, CSS3**: For creating the layout and styling the website.
+- **JavaScript**: For interactive elements, such as modal pop-ups and image galleries.
+- **Font Awesome**: Used for the icons throughout the website.
+- **Google Fonts**: The "Inter" font is used for a consistent and clean look.
+- **GitHub Pages**: Used to host the website and make it publicly accessible.
 
-## Technologies Used
-- **HTML5** for content structure and semantic elements.
-- **CSS3** for styling and layout, with Flexbox used extensively for grid alignment.
-- **Font Awesome** for icons to make the interface visually appealing.
-- **Google Fonts** for improved typography.
+## Installation
+Follow these steps to set up the project locally:
 
-## What I Learned
-Throughout this project, the key skills and new concepts I developed include:
+1. Clone the repository to your local machine using the following command:
+   ```sh
+   git clone https://github.com/arman-007/Assignment-2
+   ```
 
-- **Advanced CSS Flexbox Layouts**: Creating sophisticated multi-column layouts using Flexbox and ensuring they look balanced on various screen sizes.
-- **CSS Media Queries**: Implemented specific styling for mobile views, particularly for devices below 576px width. This included managing different column structures to ensure responsiveness.
-- **Use of Font Awesome Icons**: Leveraging icons to enhance user experience, adding visual cues for amenities and action buttons.
-- **Working with Pill Buttons**: Added round, pill-shaped buttons for actions like "Save" and "Book now," giving the interface a modern look.
-- **Complex Grid Systems**: Created custom CSS grids, particularly for arranging property images and other components, optimizing them for both large displays and smaller devices.
-- **Improved Typography**: Utilized Google Fonts and Font Awesome for better visual appearance, maintaining consistency across the website.
+2. Navigate into the project directory:
+   ```sh
+   cd Assignment-2
+   ```
+
+3. Open `index.html` in your preferred web browser to view the site.
+
+## New Changes Implemented
+Based on the feedback from the previous version:
+
+1. **Added Git Clone Instruction**: The README now includes the `git clone` command to facilitate easy project setup.
+2. **Improved Mobile Design**: Fixed the issue with the mobile view to match the reference designs. Removed the horizontal scroll bar by correcting CSS issues.
+3. **Simplified Design**: Updated the design to reduce the clutter, providing a cleaner user experience for both desktop and mobile views.
+4. **Optimized Project Structure**: Restructured the folders to create a more organized file hierarchy, including separating CSS and JavaScript assets into dedicated folders.
+5. **HTML Comments**: Added comments to the HTML file to provide a clear understanding of each section for easier maintenance.
+6. **Fixed Typos in CSS**: Corrected typographical errors in the CSS file to ensure consistency and improve readability.
+7. **Horizontal Scroll Bar Fix**: Ensured no unnecessary horizontal scrolling by adjusting styles, especially in the mobile view.
 
 ## Project Structure
-- **index.html**: The main HTML file contains the structure of the webpage, including sections for property details, image galleries, amenities, and booking details.
-- **styles.css**: This CSS file handles all the styling, ranging from global reset styles to detailed grid layouts, specific element customizations, and media queries for responsiveness.
+```
+├── assets
+│   ├── css
+│   │   └── styles.css
+│   ├── js
+│   │   └── script.js
+│   └── images
+│       └── (all image files)
+├── index.html
+├── README.md
+```
 
-## How to Use the Project
-1. Clone the repository from GitHub to your local machine.
-2. Open `index.html` in your browser to view the webpage.
-3. Customize styles in `styles.css` as needed to adjust layout or design for different purposes.
+## Known Issues
+- **Map Embedding Restrictions**: The embedded Google Maps iframe might require appropriate API settings if access is restricted.
+- **Cross-browser Compatibility**: Minor issues in layout consistency might be present in older versions of certain browsers.
 
-## Possible Improvements
-- Adding JavaScript for interactive features, such as a dynamic date picker or a scrolling gallery.
-- Including a backend to store reservation data or allow users to log in.
-- Implementing more animations or transitions for elements like buttons and images to enhance user experience.
+## Future Improvements
+- **Lazy Loading for Images**: To enhance page load speed, implement lazy loading for images in the gallery.
+- **Accessibility Features**: Further improvements can be made to improve accessibility for users with disabilities.
+- **Add a Back-End for Bookings**: Integrate a back-end to manage booking requests and store reservation data.

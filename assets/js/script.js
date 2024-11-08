@@ -122,13 +122,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Open traveler selection modal when clicked
   travelerBox.addEventListener("click", () => {
     travelerModal.style.display = "block";
-    // travelerModal.classList.toggle("hidden");
   });
 
   // Increment or decrement adults count
   incrementAdults.addEventListener("click", () => {
     adultCount++;
     adultCountSpan.textContent = adultCount;
+    decrementAdults.disabled = adultCount <= 1; // Re-enable the button if adult count > 1
     updateTravelerBoxText();
   });
 
@@ -136,9 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (adultCount > 1) {
       adultCount--;
       adultCountSpan.textContent = adultCount;
-      if (adultCount === 1) {
-        decrementAdults.disabled = true; // Disable if children count reaches zero
-      }
+      decrementAdults.disabled = adultCount <= 1; // Disable if adult count reaches 1
       updateTravelerBoxText();
     }
   });
@@ -165,8 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Save button to close modal
   saveTravelers.addEventListener("click", () => {
     travelerModal.style.display = "None";
-    // travelerModal.classList.add("hidden");
-
   });
 
   // Update traveler count display in the box
@@ -177,13 +173,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }`;
   }
 
-  // // Close modal when user clicks outside of the modal content
-  // window.addEventListener("click", () => {
-  //   travelerModal.style.display = "none";
-  // });
+  // Function to close the modal if clicking outside
+  document.addEventListener("click", (event) => {
+    // Check if the click is outside the modal and not on the travelerBox
+    if (
+      !travelerModal.contains(event.target) &&
+      !travelerBox.contains(event.target)
+    ) {
+      travelerModal.style.display = "None";
+    }
+  });
 });
 
-// Gallery Modal 
+// Gallery Modal
 // JavaScript for Modal
 document.addEventListener("DOMContentLoaded", function () {
   const galleryModal = document.getElementById("galleryModal");
@@ -218,13 +220,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function for Next Button
   nextBtn.addEventListener("click", function () {
-    currentIndex = (currentIndex + 1) % images.length;
+    currentIndex++;
     updateGallery(currentIndex);
   });
 
   // Function for Previous Button
   prevBtn.addEventListener("click", function () {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    currentIndex--;
     updateGallery(currentIndex);
   });
 
@@ -232,6 +234,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateGallery(index) {
     galleryImage.src = images[index];
     galleryCount.textContent = `${index + 1} / ${images.length}`;
+
+    // Disable/enable buttons based on index
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === images.length - 1;
   }
 
   // Click outside of the modal to close
@@ -240,9 +246,33 @@ document.addEventListener("DOMContentLoaded", function () {
       galleryModal.style.display = "none";
     }
   });
+
+  // Gallery modal for mobile
+  let startX;
+
+  galleryImage.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  galleryImage.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX > endX + 50) {
+      // Swipe left (next image)
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        updateGallery(currentIndex);
+      }
+    } else if (startX < endX - 50) {
+      // Swipe right (previous image)
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateGallery(currentIndex);
+      }
+    }
+  });
 });
 
-// share modal 
+// share modal
 document.addEventListener("DOMContentLoaded", function () {
   const shareBtn = document.getElementById("shareBtn");
   const shareModal = document.getElementById("shareModal");
@@ -280,7 +310,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Save Event 
+// Save Event
 document.addEventListener("DOMContentLoaded", function () {
   const saveBtn = document.getElementById("saveBtn");
   const heartIcon = document.getElementById("heartIcon");
@@ -309,3 +339,49 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+// mobile Gallery Carousal
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector(".carousel");
+  const images = document.querySelectorAll(".carousel-image");
+  const dots = document.querySelectorAll(".dot");
+  let currentIndex = 0;
+  let startX = 0;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentIndex);
+    });
+  }
+
+  // Swipe functionality for touch devices
+  carousel.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener("touchmove", (e) => {
+    // Prevent default to avoid unintended behaviors like scrolling
+    e.preventDefault();
+  });
+
+  carousel.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX > endX + 50 && currentIndex < images.length - 1) {
+      currentIndex++;
+    } else if (startX < endX - 50 && currentIndex > 0) {
+      currentIndex--;
+    }
+    updateCarousel();
+  });
+
+  // Dot navigation for carousel
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentIndex = index;
+      updateCarousel();
+    });
+  });
+});
+
