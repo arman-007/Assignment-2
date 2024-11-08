@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Juneau Vacation Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
 
   <body>
@@ -41,13 +41,14 @@
       </div>
       <div class="container">
         <div class="row margin-top margin-bottom">
+          <div class="col-sm-12 user-icon">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
           <div class="col-xl-6 back-link">
-            <!-- <div class="back-link"> -->
             <a class="no-link text-3" href="#">
               <i class="fa-solid fa-arrow-left"></i>
               See all properties
             </a>
-            <!-- </div> -->
           </div>
           <div class="col-xl-6">
             <div class="action-buttons">
@@ -72,19 +73,25 @@
               <div class="col-xl-12">
                 <div id="shareModal" class="share-modal">
                   <div class="share-modal-content">
-                    <span id="dismissShareModal" class="close regular-x-close"><i class="fa-solid fa-xmark"></i></span>
+                    <span id="dismissShareModal" class="close regular-x-close"
+                      ><i class="fa-solid fa-xmark"></i
+                    ></span>
                     <h3>Share</h3>
                     <div class="container">
                       <div class="row property-info">
-                        <div class="col-xl-4"><img
-                          src="images/gallery-image1.jpg"
-                          alt="Property Image"
-                        /></div>
-                        <div class="col-xl-8"><p class="bold">
-                          Juneau Vacation Home: Stunning View + Beach Access
-                        </p>
-                        <p>United States of America</p>
-                        <p>9.8/10</p></div>
+                        <div class="col-xl-4">
+                          <img
+                            src="/assets/images/gallery-image1.jpg"
+                            alt="Property Image"
+                          />
+                        </div>
+                        <div class="col-xl-8">
+                          <p class="bold">
+                            Juneau Vacation Home: Stunning View + Beach Access
+                          </p>
+                          <p>United States of America</p>
+                          <p>9.8/10</p>
+                        </div>
                       </div>
                     </div>
                     <!-- social share options -->
@@ -93,7 +100,7 @@
                         <div class="col-xl-4">
                           <button class="social-btn">
                             <i class="fa-brands fa-x-twitter"></i>
-                            <p class="text-4 bold" style="text-align: center">
+                            <p class="text-4 bold">
                               X
                             </p>
                           </button>
@@ -101,7 +108,7 @@
                         <div class="col-xl-4">
                           <button class="social-btn">
                             <i class="fa-brands fa-whatsapp"></i>
-                            <p class="text-4 bold" style="text-align: center">
+                            <p class="text-4 bold">
                               WhatsApp
                             </p>
                           </button>
@@ -109,18 +116,17 @@
                         <div class="col-xl-4">
                           <button class="social-btn">
                             <i class="fa-brands fa-facebook"></i>
-                            <p class="text-4 bold" style="text-align: center">
+                            <p class="text-4 bold">
                               Facebook
                             </p>
                           </button>
                         </div>
-                        
                       </div>
                       <div class="row">
                         <div class="col-xl-4">
                           <button class="social-btn">
                             <i class="fa-brands fa-facebook-messenger"></i>
-                            <p class="text-4 bold" style="text-align: center">
+                            <p class="text-4 bold">
                               Messenger
                             </p>
                           </button>
@@ -128,7 +134,7 @@
                         <div class="col-xl-4">
                           <button class="social-btn">
                             <i class="fa-brands fa-telegram"></i>
-                            <p class="text-4 bold" style="text-align: center">
+                            <p class="text-4 bold">
                               Telegram
                             </p>
                           </button>
@@ -136,7 +142,7 @@
                         <div class="col-xl-4">
                           <button id="copyLinkBtn" class="social-btn">
                             <i class="fa-solid fa-clipboard-list"></i>
-                            <p class="text-4 bold" style="text-align: center">
+                            <p class="text-4 bold">
                               Copy link
                             </p>
                           </button>
@@ -149,75 +155,154 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-6 col-sm-12">
-            <img
-              class="image-fluid"
-              src="images/gallery-image1.jpg"
-              alt="placeholder"
-            />
-          </div>
-          <div class="col-xl-6 col-sm-12">
-            <div class="row">
-              <div class="col-xl-6">
-                <img
-                  class="image-fluid"
-                  src="images/gallery-image2.jpg"
-                  alt="placeholder"
-                />
-              </div>
-              <div class="col-xl-6">
-                <img
-                  class="image-fluid"
-                  src="images/gallery-image3.jpg"
-                  alt="placeholder"
-                />
-              </div>
-              <div class="col-xl-6">
-                <img
-                  class="image-fluid"
-                  src="images/gallery-image4.jpg"
-                  alt="placeholder"
-                />
-              </div>
-              <div class="col-xl-6">
-                <img
-                  class="image-fluid"
-                  src="images/gallery-image5.jpg"
-                  alt="placeholder"
-                />
+
+        <!-- Gallery -->
+        <div class="gallery-image-container">
+          <div class="row desktop-gallery">
+            <div class="col-xl-6 col-sm-12">
+              <img
+                class="image-fluid"
+                src="/assets/images/gallery-image1.jpg"
+                alt="placeholder"
+              />
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <div class="row">
+                <div class="col-xl-6">
+                  <img
+                    class="image-fluid"
+                    src="/assets/images/gallery-image2.jpg"
+                    alt="placeholder"
+                  />
+                </div>
+                <div class="col-xl-6">
+                  <img
+                    class="image-fluid"
+                    src="/assets/images/gallery-image3.jpg"
+                    alt="placeholder"
+                  />
+                </div>
+                <div class="col-xl-6">
+                  <img
+                    class="image-fluid"
+                    src="/assets/images/gallery-image5.jpg"
+                    alt="placeholder"
+                  />
+                </div>
+                <div class="col-xl-6">
+                  <img
+                    class="image-fluid"
+                    src="/assets/images/gallery-image4.jpg"
+                    alt="placeholder"
+                  />
+                  <div class="view-all-button-wrapper">
+                    <button class="view-all-button" id="openGalleryBtn">
+                      <i class="fa-solid fa-photo-film"></i>30+
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="view-all-button">
-          <button id="openGalleryBtn">+ 30 Photos</button>
+
+          <!-- mobile Gallery  -->
+          <div class="carousel-container mobile-carousel">
+            <div class="row">
+            <div class="overlay-actions">
+                <div class="col-sm-6">
+                  <a class="no-link text-3" href="#">
+                    <i class="fa-solid fa-arrow-left"></i> See all properties
+                  </a>
+                </div>
+                <div class="col-sm-6 flex">
+                  <button id="shareBtn" class="share-btn pill-btn">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                  </button>
+                  <button id="saveBtn" class="pill-btn">
+                    <i id="heartIcon" class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel">
+              <img
+                class="carousel-image"
+                src="/assets/images/gallery-image1.jpg"
+                alt="Gallery Image 1"
+              />
+              <img
+                class="carousel-image"
+                src="/assets/images/gallery-image2.jpg"
+                alt="Gallery Image 2"
+              />
+              <img
+                class="carousel-image"
+                src="/assets/images/gallery-image3.jpg"
+                alt="Gallery Image 3"
+              />
+              <img
+                class="carousel-image"
+                src="/assets/images/gallery-image4.jpg"
+                alt="Gallery Image 4"
+              />
+              <img
+                class="carousel-image"
+                src="/assets/images/gallery-image5.jpg"
+                alt="Gallery Image 5"
+              />
+            </div>
+            <!-- Optional dots for navigation -->
+            <div class="carousel-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+            </div>
+          </div>
         </div>
 
         <!-- Gallery Modal -->
-        <div id="galleryModal" class="gallery-modal">
-          <div class="gallery-content">
-            <!-- Close/Dismiss Button -->
-            <span id="closeModal" class="close">&times;</span>
+        <div class="container flex">
+          <div id="galleryModal" class="gallery-modal">
+            <div class="gallery-content">
+              <div class="row">
+                <div class="col-xl-12">
+                  <!-- Close/Dismiss Button -->
+                  <span id="closeModal" class="close"
+                    ><i class="fa-solid fa-xmark"></i
+                  ></span>
+                </div>
+              </div>
 
-            <!-- Image Display -->
-            <img
-              id="galleryImage"
-              src="images/gallery-image1.jpg"
-              alt="Gallery Image"
-            />
+              <!-- Image Display -->
+              <div class="row">
+                <img
+                  id="galleryImage"
+                  src="/assets/images/gallery-image1.jpg"
+                  alt="Gallery Image"
+                />
+              </div>
 
-            <!-- Previous and Next Buttons -->
-            <a class="prev" id="prevBtn">&#10094;</a>
-            <a class="next" id="nextBtn">&#10095;</a>
+              <!-- Navigation Buttons Below the Image -->
+              <div class="nav-buttons">
+                <button class="prev" id="prevBtn">
+                  <i class="fa-solid fa-circle-chevron-left"></i>
+                </button>
+                <button class="next" id="nextBtn">
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+              </div>
 
-            <!-- Caption for Image -->
-            <div id="galleryCaption" class="caption-text">
-              Juneau Vacation Rental | 2BR | 1BA | 1,115 Sq Ft | Stairs Required
+              <!-- Caption and Image Count Below the Buttons -->
+              <div class="row">
+                <div class="caption-text">
+                  Juneau Vacation Rental | 2BR | 1BA | 1,115 Sq Ft | Stairs
+                  Required
+                </div>
+                <div id="galleryCount" class="image-count">1 / 5</div>
+              </div>
             </div>
-
-            <!-- Count Indicator -->
-            <div id="galleryCount" class="image-count">1 / 5</div>
           </div>
         </div>
       </div>
@@ -244,11 +329,12 @@
             <div class="row rating">
               <div class="col-xl-4 no-padding col-sm-12">
                 <p class="text-2 bold"><span>9.8</span> Exceptional</p>
-                <a class="text-3 bold" href="#"
+                <a class="text-3 bold margin-top" href="#"
                   >See all 24 reviews <i class="fa-solid fa-chevron-right"></i
                 ></a>
               </div>
             </div>
+            <!-- Room details  -->
             <div class="row">
               <div class="col-xl-6">
                 <div class="property-info">
@@ -275,6 +361,7 @@
                 </div>
               </div>
             </div>
+            <!-- amenities  -->
             <div class="row">
               <div class="col-xl-12">
                 <h3 class="text-2">Popular amenities</h3>
@@ -318,17 +405,18 @@
                 See all property amenities &rarr;
               </a>
             </div>
+            <!-- location and map  -->
             <div class="row">
               <div class="col-xl-12 no-padding">
-                <h3 class="text-2 margin-top">Explore the AREA</h3>
+                <h3 class="text-2 margin-big-y">Explore the AREA</h3>
               </div>
             </div>
             <div class="row">
               <div class="col-xl-6 no-padding col-sm-12">
-                <div class="mapouter">
-                  <div class="gmap_canvas">
+                <div class="map-outer">
+                  <div class="google-map-canvas">
                     <iframe
-                      class="gmap_iframe"
+                      class="google-map-iframe"
                       width="100%"
                       frameborder="0"
                       scrolling="no"
@@ -406,7 +494,7 @@
               </div>
             </div>
 
-            <!-- moved room section here -->
+
             <div class="col-xl-8 col-sm-12">
               <div class="room-bathroom-info">
                 <div class="row">
@@ -516,17 +604,17 @@
                   <div id="travelerBox" class="date-box">2 travelers</div>
 
                   <!-- Traveler Selection Box (Hidden initially) -->
-                  <div id="travelerModal" class="traveler-modal hidden">
+                  <div id="travelerModal" class="traveler-modal">
                     <div class="traveler-options">
                       <div class="option">
                         <p>Adults</p>
                         <div class="controls">
                           <button class="decrement" id="decrementAdults">
-                            -
+                            <i class="fa-solid fa-minus"></i>
                           </button>
                           <span id="adultCount">2</span>
                           <button class="increment" id="incrementAdults">
-                            +
+                            <i class="fa-solid fa-plus"></i>
                           </button>
                         </div>
                       </div>
@@ -538,11 +626,11 @@
                             id="decrementChildren"
                             disabled
                           >
-                            -
+                            <i class="fa-solid fa-minus"></i>
                           </button>
                           <span id="childCount">0</span>
                           <button class="increment" id="incrementChildren">
-                            +
+                            <i class="fa-solid fa-plus"></i>
                           </button>
                         </div>
                       </div>
@@ -587,6 +675,7 @@
         </div>
       </div>
 
+      <!-- description about the property  -->
       <section>
         <div class="container">
           <div class="row">
@@ -733,6 +822,8 @@
           </div>
         </div>
       </section>
+
+      <!-- AI FAQ  -->
       <section>
         <div class="container">
           <div class="row card query">
@@ -776,6 +867,8 @@
           </div>
         </div>
       </section>
+
+      <!-- house rule and contact section  -->
       <section>
         <div class="container">
           <div class="row">
@@ -1037,7 +1130,6 @@
       </section>
       <footer></footer>
 
-      <!-- Modals -->
       <!-- Modal for Region modal and Currency Selection -->
       <div id="regionModal" class="modal">
         <div class="modal-content">
@@ -1062,7 +1154,13 @@
             </select>
 
             <label for="currency">Currency</label>
-            <input class="text-fade" type="text" id="currency" name="currency" readonly />
+            <input
+              class="text-fade"
+              type="text"
+              id="currency"
+              name="currency"
+              readonly
+            />
 
             <button id="saveRegion" type="button" class="save-btn">Save</button>
           </form>
@@ -1070,7 +1168,7 @@
       </div>
 
       <!-- scripts -->
-      <script src="script.js"></script>
+      <script src="/assets/js/script.js"></script>
     </main>
   </body>
 </html>
